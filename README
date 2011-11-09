@@ -1,0 +1,17 @@
+PartialMap
+==========
+
+Too many partials in your project? Can't figure out if the hip bone 
+connects to the thighbone or the cheekbone? Let PartialMap help :)
+
+
+Example
+=======
+
+Usage:
+rake partials:map
+
+Example Output:
+
+
+Copyright (c) 2011 Yan Pritzker, released under the MIT license
