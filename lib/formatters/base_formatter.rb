@@ -10,7 +10,7 @@ module PartialMap
     def link_to_partial(file); raise NotImplementedError; end
 
     def clean_path(path)
-      base_path = File.join(RAILS_ROOT,'app/views/')
+      base_path = File.join(::Rails.root.to_s,'app/views/')
       cleaned_path="#{path.gsub(base_path,"")}"
     end
 

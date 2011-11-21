@@ -3,11 +3,11 @@ namespace(:partialmap) do
 
   desc "Show a tree of all the view partials."
   task(:text) do
-    PartialMap::Parser.new(PartialMap::PlainFormatter.new).draw_partial_map(File.join(RAILS_ROOT,'app/views'))
+    PartialMap::Parser.new(PartialMap::PlainFormatter.new).draw_partial_map(File.join(::Rails.root.to_s,'app/views'))
   end
 
   desc "Show a tree of all the view partials."
   task(:html) do
-    PartialMap::Parser.new(PartialMap::HtmlFormatter.new).draw_partial_map(File.join(RAILS_ROOT,'app/views'))
+    PartialMap::Parser.new(PartialMap::HtmlFormatter.new).draw_partial_map(File.join(::Rails.root.to_s,'app/views'))
   end
 end
