@@ -82,7 +82,7 @@ module PartialMap
           # debug "Searching #{partial_path}"
           partial_filename = Dir[partial_path + "*"].first # find the actual fileame
 
-          unless tracked_partials[partial_filename]
+          unless partial_filename.nil? || tracked_partials[partial_filename]
             subpartials_found += 1
             output << list_subpartials(partial_filename,level+1)
             tracked_partials[partial_filename] = true
