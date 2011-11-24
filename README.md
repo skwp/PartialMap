@@ -1,8 +1,14 @@
 PartialMap
 ==========
 
-Too many partials in your project? Can't figure out if the hip bone 
+Too many partials in your project? Can't figure out if the hip bone
 connects to the thighbone or the cheekbone? Let PartialMap help :)
+
+rails 3
+
+    script/rails plugin install git@github.com:skwp/PartialMap.git
+
+rails 2
 
     script/plugin install git@github.com:skwp/PartialMap.git
 
