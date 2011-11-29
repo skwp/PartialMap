@@ -1,5 +1,5 @@
 require 'pathname'
-Dir["#{File.dirname(__FILE__)}/formatters/**"].each {|f| require f; puts f}
+Dir["#{File.dirname(__FILE__)}/formatters/**"].sort.each {|f| require f; puts f}
 
 # Parse a directory looking for top level files, then recurse
 # down and expand all their partials. This is pretty inefficient
